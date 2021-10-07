@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person>
-	<Employee name="Тимошко Юрий Григорьевич">
+	<Employee name="Тимошко Юрий Григорьевич"/>
 		<age>35</age>
-	<Employee animals="кошки">
+	<Employee animals="кошки"/>
 		<quantity>3</quantity>
-	<Employee salary="Моя будущая зарплата">
+	<Employee salary="Моя будущая зарплата"/>
 		<salary>700</salary>
 </person>
