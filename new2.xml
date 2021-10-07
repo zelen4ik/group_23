@@ -5,5 +5,5 @@
 	<Employee animals="кошки">
 		<quantity>3</quantity>
 	<Employee salary="Моя будущая зарплата">
-		<salary>600</salary>
+		<salary>700</salary>
 </person>
