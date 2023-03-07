@@ -1,0 +1,43 @@
+Первое ДЗ 
+до 04.10.2021
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я : pwd
+2) Создать папку : mkdir homework
+3) Зайти в папку : cd homework
+4) Создать 3 папки : mkdir folder1 folder2 folder3
+5) Зайти в любую папку : cd folder1
+6) Создать 5 файлов (3 txt, 2 json) : touch text_1.txt text_2.txt text_3.txt text_4.json text_5.json
+7) Создать 3 папки : mkdir dir_1 dir_2 dir_3
+8) Вывести список содержимого папки : ls -la
+9) + Открыть любой txt файл : nano text_1.txt
+10) + написать туда что-нибудь, любой текст. :i, любой текст...
+11) + сохранить и выйти. :esc, :wq 
+12) Выйти из папки на уровень выше :cd ..
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку. : mv ./folder1/{text_1.txt,text_2.txt} ./folder3
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. : cp ./folder3/{text_1.txt,text_2.txt} ./folder2
+15) Найти файл по имени : find . -name text_1.txt
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает. : tail -F text_1.txt
+17) вывести несколько первых строк из текстового файла : head -n2 text_1.txt
+18) вывести несколько последних строк из текстового файла : tail -n4 text_1.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает. : less text_1.txt
+20) вывести дату и время : date
+=========
+
+Задание *
+1) Отправить http запрос на сервер. 
+http://162.55.220.72:5005/terminal-hw-request
+ : curl 'http://162.55.220.72:5005/get_method?name=Yura&age=35'
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+ : script1.sh
+#!/bin/bash
+
+cd homework
+mkdir folder1 folder2 folder3
+cd folder1
+touch text_1.txt text_2.txt text_3.txt text_4.json text_5.json
+mkdir dir_1 dir_2 dir_3
+ls -la
+cd ..
+mv ./folder1/{text_1.txt,text_2.txt} ./folder3
